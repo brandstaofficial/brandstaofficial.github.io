@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype'),
+        url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bisleri_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whole {
+    background: linear-gradient(to bottom, rgba(16, 193, 176, 0.5) 0%, rgba(82, 222, 207, 0.8) 50%, rgba(0, 119, 105, 1) 100%);
+    /* background-color: rgba(0,0,0,1); */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 4vh 4vw;
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+* {
+    /* color: #000; */
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header_wrap {
+    width: auto;
+}
+
+.content_wrap {
+    padding: 0 8%;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left_wrap {
+    padding: 9% 3% 3% 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right_wrap {
+    padding: 9% 3% 3% 3%;
+}
+
+.logo_wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_wrap img {
+    height: 10vh;
+    width: auto;
+}
+
+.screenshots_wrap img {
+    max-height: 65vh;
+    width: auto;
+}
+
+.detail_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app_title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.app_details {
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+}
+
+.login_btn {
+    outline: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    font-size: 1.686rem;
+    letter-spacing: 0.5px;
+    padding: 1rem 2.5rem;
+    color: #00b3a1;
+    background-color: #fff;
+    border: #fff 2px solid;
+    outline: none;
+}
+.login_btn:hover,
+.login_btn:active,
+.login_btn:focus {
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: #fff 2px solid;
+}
+
+@media only screen and (min-width: 1576px) {
+
+    .app_title {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .whole {
+        min-height: 100vh;
+    }
+
+    .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .screenshots_wrap img {
+        max-height: 40vh;
+        width: auto;
+    }
+
+    .detail_wrap {
+        align-items: center;
+    }
+
+    .app_title {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .app_details {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+    }
+
+    .login_btn {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .left_wrap, .right_wrap {
+        padding-top: 3%;
+    }
+    .app_title {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .app_details {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .login_btn {
+        font-size: 1.6rem;
+    }
+
+}
