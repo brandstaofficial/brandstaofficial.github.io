@@ -1,2 +1,2 @@
 # brandstaofficial.github.io
-Your Digital Dude
+Your Digital Partner
